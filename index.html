@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>LogicUS</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/logicusLogo.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/logicusLogo.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<!--Fontawesome CSS-->
+<link rel="stylesheet" href="fontawesomeIcons/css/all.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Start header -->
+    <header class="top-navbar">
+    </header>
+    <script src="js/nav.js"></script>
+    <script>
+        document.querySelector("header").innerHTML = nav_element;
+    </script>
+    <!-- End header -->
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('images/SLIDER_LogicUSLIB.png');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2><strong>LogicUS-LIB </strong> El motor de LogicUS</h2>
+                                        <p class="lead"> Implementa la base de cálculo y representación del sistema
+                                            LogicUS. <br> Basada en el paradigma funcional y la orientación Web con Elm.
+                                        </p>
+                                        <a href="https://package.elm-lang.org/packages/logicUSLIB/logicus-pl/latest"
+                                            class="hover-btn-new"><span>LogicUS.PL</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="https://package.elm-lang.org/packages/logicUSLIB/logicus-fol/latest"
+                                            class="hover-btn-new"><span>LogicUS.FOL</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section" style="background-image:url('images/SLIDER_LogicUSNB.png');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight"> Generar documentos <strong>
+                                                LogicUS-NB </strong></h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"> Haciendo uso de litvis,
+                                            una herramienta para la creación de documentos en la que se integran los
+                                            elementos típicos de cualquier documentación (lenguaje Markdown), con el
+                                            código Elm y las tecnologías de representación. </p>
+                                        <a href="docs/install/InstallLogicUSWindows.md" class="hover-btn-new" download><span> INSTALACIÓN EN WINDOWS</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="docs/install/InstallLogicUSLinux.md" class="hover-btn-new" download><span> INSTALACIÓN EN LINUX/MacOS</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section" style="background-image:url('images/SLIDER_LogicUSGUI.png');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight"><strong>LogicUS-GUI</strong>
+                                            LogicUS en la Web
+                                        </h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"> Una Interfaz Web
+                                            implementada en Elm (compilable a HTML y JS) y basada en los principios de
+                                            usabilidad y explicabilidad, proporcionando una herramienta con la que los
+                                            estudiantes puedan hacer uso directo de los métodos y algoritmos disponibles
+                                            abstrayéndose de la sintáxis del lenguaje base.</p>
+                                        <a href="#" class="hover-btn-new"><span>ESTAMOS TRABAJANDO EN ELLA</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <!-- Left Control -->
+            <a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Conoce LogicUS</h3>
+                    <p class="lead"><strong>Una herramienta funcional y Web orientada a la enseñanza de la
+                            Lógica</strong></p>
+                </div>
+            </div><!-- end title -->
+
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <p>La Lógica es un pilar fundamental en el desarrollo de todas las
+                            disciplinas informáticas,
+                            desde los aspectos orientados al hardware (diseño y verificación de circuitos), hasta el
+                            software (manejo de consultas de bases de datos, verificación formal de programas, etc.), y,
+                            sobre todo, en el campo de las Ciencias de la Computación y la Inteligencia Artificial.</p>
+
+                        </p>
+
+                        <p>El proyecto LogicUS constituye un sistema de apoyo a la enseñanza de la Lógica Computacional.
+                            El objetivo es proporcionar las herramientas necesarias, en diferentes niveles de
+                            abstracción, para el tratamiento de la Lógica orientada a la resolución de problemas en
+                            diferentes aspectos de la Lógica Proposicional (LP o PL) y de Primer Orden (LPO o FOL).
+                            Estas herramientas, basadas en el uso de la programación funcional y con una orientación
+                            web, proporcionan un conjunto de algoritmos operativos (tableros semánticos, DPLL,
+                            resolución, Herbrand, etc.),</p>
+
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_02.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <p>
+                            así como las representaciones de las ejecuciones y resultados
+                            en diferentes formatos (tablas, gráficos, ...) específicamente diseñados para permitir la
+                            integración con otros sistemas y herramientas, en concreto para la generación de documentos
+                            exportables en diferentes formatos. Proporcionando un conjunto completo de herramientas para
+                            apoyar el desarrollo docente en Lógica Computacional de forma interactiva durante el
+                            desarrollo de sesiones teóricas, generación de documentación, prácticas y pruebas de
+                            evaluación.
+                        </p>
+                        <p>
+                            El sistema LogicUS está diseñado para proporcionar una herramienta capaz de abordar los
+                            diferentes procesos involucrados en el aspecto docente (enseñanza, aprendizaje,
+                            evaluación,...) de forma modular, abierta, gratuita, ligera, e incluso colaborativa, para la
+                            enseñanza de la Lógica en el contexto de diferentes disciplinas científicas.
+                        </p>
+
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <!-- <section class="section lb page-section">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Our history</h3>
+                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                        lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline__wrap">
+                    <div class="timeline__items">
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-01">
+                                <h2>2018</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-02">
+                                <h2>2015</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-03">
+                                <h2>2014</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-04">
+                                <h2>2012</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-01">
+                                <h2>2010</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-02">
+                                <h2>2007</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-03">
+                                <h2>2004</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-04">
+                                <h2>2002</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="section cl">
+        <div class="container">
+            <div class="row text-left stat-wrap">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-study"></i></span>
+                    <p class="stat_count">12000</p>
+                    <h3>Students</h3>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-online"></i></span>
+                    <p class="stat_count">240</p>
+                    <h3>Courses</h3>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-years"></i></span>
+                    <p class="stat_count">55</p>
+                    <h3>Years Completed</h3>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+    </footer>
+    <script>
+        document.querySelector("footer").innerHTML = footer_content;
+    </script>
+    ><!-- end footer -->
+
+
+    <div class="copyrights">
+    </div><!-- end copyrights -->
+    <script>
+        document.querySelector(".copyrights").innerHTML = copyrights_content;
+    </script>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+</body>
+
+</html>
