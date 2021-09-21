@@ -153,7 +153,8 @@ Por lo general será suficiente con importar el paquete LogicUS, aunque ocasiona
 ---
 elm:
   dependencies:
-    vicramgon/logicus: latest
+    logicUSLIB/logicus-pl : latest
+    logicUSLIB/logicus-fol : latest
 ---
 ```
 
