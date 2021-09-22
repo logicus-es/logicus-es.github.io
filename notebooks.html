@@ -108,8 +108,8 @@
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li><i class="fa fa-book" aria-hidden="true"></i> <a href="docs/notebooks/${n.link}" title="Notebook" download>Notebook</a> </li>
-								${n.visibility==2?'<li><i class="fas fa-jedi"></i> <a href="docs/notebooks/'+ n.sollink +'" title="Solution" download> Solution</a></li>':''}
+								<li><i class="fa fa-book" aria-hidden="true"></i> <a href="${n.link}" title="Notebook" download>Notebook</a> </li>
+								${n.visibility==2?'<li><i class="fas fa-jedi"></i> <a href="'+ n.sollink +'" title="Solution" download> Solution</a></li>':''}
 							</ul>
 						</div>
 					</div>
