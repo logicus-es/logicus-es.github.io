@@ -92,10 +92,10 @@
 					pagination.forEach(v => {
 					//  console.log(n)
 					 videosHtml += `<div class="row course-item"> 
-                <div class="col-lg-6 col-md-6 col-12">
-						<div class="image-blog">
-							<video src="docs/videos/${v.link}" width="100%" height="auto" poster="docs/videos/images/${v.poster}" controls></video>
-						</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="${v.link}" title="YouTube video player: ${v.title}" allowfullscreen></iframe>
+					</div>
 				</div><!-- end col -->
 				<div class="col-lg-6 col-md-6 col-12">
 					<div class="course-title">
