@@ -72,7 +72,7 @@
 				<script src="js/materials.js"></script>
     <script>
         var page_number=1; 
-        var page_size = 6; 
+        var page_size = 8; 
         var notebooksHtml="";
         var available_notebooks = notebooks.filter(n=>n.visibility>0);
         var pageCont =Math.ceil(available_notebooks.length/page_size);
@@ -88,20 +88,23 @@
         }
         function showNotebooks(){
 			var pagination =  available_notebooks.slice((page_number - 1) * page_size, page_number * page_size)
-            // console.log("nextPage",pagination)
-            notebooksHtml ='<div class="row">';
-            pagination.forEach(n => {
+            var notebooksHtml = ""
+            var row = ""
+            // console.log("nextPage",pagination)+
+            for (var i = 0; i < pagination.length; i += 4) {
+                row = '<div class="row">';
+                pagination.slice(i, i + 4).forEach(n => {
             //  console.log(n)
-             notebooksHtml += `<div class="col-lg-4 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="course-br">
+             row += `<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item course-br">
+						<div>
 							<div class="image-blog">
 							<img src="images/${n.section}_notebook.png" alt="${n.section}_notebook image" class="img-fluid">
 						</div>
 							<div class="course-title">
 								<h2>${n.title}</h2>
 							</div>
-							<div class="blog-desc">
+							<div class="course-desc">
 								<p>${n.description}</p>
 							</div>
 							
@@ -115,7 +118,10 @@
 					</div>
                 </div>`;
               });
-			notebooksHtml+='</div><center>'
+              row += '</div><!-- end row -->'
+              notebooksHtml += row;
+            };
+			notebooksHtml+='</div><hr class="invis"><center>'
             notebooksHtml+= page_number >1  ? '<button class="btn btn-outline-secondary" onclick="previusPage()">Anterior</button>':'';
             notebooksHtml+= page_number < pageCont ?('<button class="btn btn-outline-info" onclick="nextPage()">Siguiente</button>'):'' ;
 			notebooksHtml+="</center>"
@@ -125,7 +131,7 @@
         showNotebooks();
     </script>
 
-            <!-- end row -->			 	
+            			 	
         </div><!-- end container -->
     </div><!-- end section -->
 

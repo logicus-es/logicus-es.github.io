@@ -66,12 +66,14 @@
 
             <hr class="invis"> 
 
-			<div id="videos"></div>
+			<div id="videos">
+
+			</div>
 
 			<script src="js/materials.js"></script>
 			<script>
 				var page_number=1; 
-				var page_size = 6; 
+				var page_size = 8; 
 				var videosHtml="";
 				var available_videos = videos.filter(v=>v.visibility>0);
 				var pageCont =Math.ceil(available_videos.length/page_size);
@@ -88,40 +90,35 @@
 				function showVideos(){
 					var pagination =  available_videos.slice((page_number - 1) * page_size, page_number * page_size)
 					// console.log("nextPage",pagination)
-					videosHtml ='';
+					videosHtml ='<div id="content" class="row">';
 					pagination.forEach(v => {
 					//  console.log(n)
-					 videosHtml += `<div class="row course-item"> 
-				<div class="col-lg-6 col-md-6 col-12">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="${v.link}" title="YouTube video player: ${v.title}" allowfullscreen></iframe>
-					</div>
-				</div><!-- end col -->
-				<div class="col-lg-6 col-md-6 col-12">
-					<div class="course-title">
-						<h2>${v.title}</h2>
-					</div>
-					<div class="course-desc">
-						<p>${v.description}</p>
-					</div>`;
-					
-					if (v.complementary != "") {
-						videosHtml += `<hr class="hr3">
-					<div class="course-desc">
-						<h5>Información y materiales complementarios</h5>
-						<div>
-							${v.comple}
-						</div>
-					</div>`
-				};
-					
-					videosHtml += `</div><!-- end col -->
-            </div><!-- end row -->
-
-			<hr class="hr-bluedark">`;
+					 videosHtml += `
+						<div class="col-lg-6 col-md-12 col-12">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="${v.link}" title="YouTube video player: ${v.title}" allowfullscreen></iframe>
+							</div>
+						
+							<div class="course-title">
+								<h2>${v.title}</h2>
+							</div>
+							<div class="course-desc">
+								<p>${v.description}</p>
+							</div>`;
+							
+							if (v.complementary != "") {
+								videosHtml += `<hr class="hr3">
+									<div class="course-desc">
+										<h5>Información y materiales complementarios</h5>
+										<div>
+											${v.complementary}
+										</div>
+									</div>`
+							};
+					 videosHtml += '</div>';
 					  });
 
-					videosHtml+='<hr class="invis"><center>'
+					videosHtml+='</div>' + '<hr class="invis"><center>'
 					videosHtml+= page_number > 1  ? '<button class="btn btn-outline-secondary" onclick="previusPage()">Anterior</button>':'';
 					videosHtml+= page_number < pageCont ?('<button class="btn btn-outline-info" onclick="nextPage()">Siguiente</button>'):'' ;
 					videosHtml+="</center>"

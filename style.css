@@ -3843,6 +3843,9 @@ a.link-style3 {
 .course-item{
 	background: #ffffff;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .course-item {
@@ -3873,13 +3876,13 @@ a.link-style3 {
 .course-br{
 	border: 1px solid #4babb1;
 	padding: 15px;
+    height: 100%;
 }
 .course-meta-bot{
-	border: 1px solid #4babb1;
-	border-top: 0px;
 	padding: 15px;
 }
 .course-meta-bot ul{
+    border: 1px solid #4babb1;
 	padding: 0px;
 	margin: 0px;
 	display: block;
@@ -3888,7 +3891,7 @@ a.link-style3 {
 .course-meta-bot ul li{
 	display: inline-block;
 	list-style: none;
-	padding: 0px 5px;
+	padding: 15px;
 	color: #212121;
 	font-size: 11px;
 }
