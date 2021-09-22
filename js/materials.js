@@ -38,7 +38,7 @@ var videos =
 
 var notebooks =
     [
-        {"title": "Problema Puertas", "description":"Notebook sintaxis y semántica PL", "section":"LP", "link":"introLitvis.md", "sollink":"", "visibility":1},
-         {"title": "Introducción a litvis", "description":"Un notebook de introducción a la herramienta litvis, las cabeceras, elementos markdown, bloques ejecutables y de visualización, etc.", "section":"OT", "link":"introLitvis.md", "sollink":"", "visibility":1}
+        {"title": "Problema Puertas", "description":"Notebook sintaxis y semántica PL", "section":"LP", "link":"https://drive.google.com/file/d/1TyVTiDTUWPyxvDHdJ_BmOLMwKdyB79vG/view?usp=sharing", "sollink":"", "visibility":1},
+         {"title": "Introducción a litvis", "description":"Un notebook de introducción a la herramienta litvis, las cabeceras, elementos markdown, bloques ejecutables y de visualización, etc.", "section":"OT", "link":"docs/notebooks/introLitvis.md", "sollink":"", "visibility":1}
     ]
 
