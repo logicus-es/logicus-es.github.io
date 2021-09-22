@@ -13,7 +13,7 @@ var videos =
     [
         {   "title": "Presentación LogicUS", 
             "description":"Presentamos una perspectiva general del proyecto LogicUS, sus objetivos, herramientas, instalación y uso, materiales y participantes en el proyecto.", 
-            "link":"https://youtu.be/embed/MgMMMrYn8kU", 
+            "link":"https://www.youtube.com/embed/MgMMMrYn8kU", 
             "complementary":"", 
             "visibility":1
         },
