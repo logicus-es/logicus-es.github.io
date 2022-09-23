@@ -12,19 +12,19 @@ var nav_element = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
         </button>
         <div class="collapse navbar-collapse" id="navbars-host">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item "><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">El proyecto LogicUS</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
-                        Material Formativo
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                        <a class="dropdown-item" href="videos.html"> Vídeos </a>
-                        <a class="dropdown-item" href="notebooks.html"> Notebooks y prácticas </a>
-                        <!--<a class="dropdown-item" href="course-grid-4.html"> Otro material </a>-->
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="participants.html">Participantes</a></li>
+                <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">LogicUS Project</a></li>
+                ` 
+            //     +`<li class="nav-item dropdown">
+            //     <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
+            //         Materials
+            //     </a>
+            //     <div class="dropdown-menu" aria-labelledby="dropdown-a">
+            //         <a class="dropdown-item" href="videos.html"> Videos </a>
+            //         <a class="dropdown-item" href="notebooks.html"> Complementary </a>
+            //     </div>
+            // </li>` 
+                +`<li class="nav-item"><a class="nav-link" href="participants.html">Participants</a></li>
             </ul>
         </div>
     </div>
@@ -38,7 +38,7 @@ var footer_content = `<div class="container">
                 <h3>LogicUS
                 </h3>
             </div>
-            <p> Una herramienta funcional y Web orientada a la enseñanza de la Lógica </p>
+            <p> A multi-environment framework for Logic </p>
         </div><!-- end clearfix -->
     </div><!-- end col -->
 
@@ -48,7 +48,7 @@ var footer_content = `<div class="container">
     <div class="col-lg-4 col-md-4 col-xs-12">
         <div class="widget clearfix">
             <div class="widget-title">
-                <h3>Contacto y sitios</h3>
+                <h3>Contact & sites</h3>
             </div>
 
 

@@ -11,12 +11,6 @@
 
 var videos =
     [
-        {   "title": "Presentación LogicUS", 
-            "description":"Presentamos una perspectiva general del proyecto LogicUS, sus objetivos, herramientas, instalación y uso, materiales y participantes en el proyecto.", 
-            "link":"https://www.youtube.com/embed/MgMMMrYn8kU", 
-            "complementary":"", 
-            "visibility":1
-        },
     ]
 
 
@@ -36,18 +30,5 @@ var videos =
 
 var notebooks =
     [
-        {"title": "Problema Puertas", 
-        "description":"Notebook sintaxis y semántica PL. <br> Notebook de prueba. ", 
-        "section":"LP", 
-        "link":"https://drive.google.com/file/d/1TyVTiDTUWPyxvDHdJ_BmOLMwKdyB79vG/view?usp=sharing", 
-        "sollink":"", 
-        "visibility":1},
-
-         {"title": "Introducción a litvis", 
-         "description":"Un notebook de introducción a la herramienta litvis, las cabeceras, elementos markdown, bloques ejecutables y de visualización, etc.", 
-         "section":"OT", 
-         "link":"https://drive.google.com/file/d/1FZNpGUldImbWxBLFZAjTy5XAWB5pBgHF/view?usp=sharing", 
-         "sollink":"", 
-         "visibility":1},
     ]
 
