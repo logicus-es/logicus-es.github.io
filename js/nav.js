@@ -25,6 +25,7 @@ var nav_element = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
             //     </div>
             // </li>` 
                 +`<li class="nav-item"><a class="nav-link" href="participants.html">Participants</a></li>
+                <li class="nav-item"><a class="nav-link" href="announcements.html">Announcements</a></li>
             </ul>
         </div>
     </div>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>LogicUS</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logicusLogo.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/logicusLogo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<!--Fontawesome CSS-->
+	<link rel="stylesheet" href="fontawesomeIcons/css/all.css">
+
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+
+    <!-- Start header -->
+	<header class="top-navbar">
+    </header>
+    <script src="js/nav.js"></script>
+    <script>
+        document.querySelector("header").innerHTML = nav_element;
+    </script>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>LogicUS<span class="m_1"> A multi-environment framework for Logic </span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <div class="course-item course-br">
+						
+							<div class="course-title">
+								<h2>Announcements</h2>
+							</div>
+							<div class="course-desc" id="announcements">
+							</div>
+							
+						</div>
+					</div>
+                </div>
+            </div><!-- end title -->
+
+            
+
+            <script src="js/announcements.js"></script>
+            <script>
+                announcementsDiv = document.getElementById("announcements")
+                announcementsDiv.innerHTML = announcements.map(x => `<p><b>${x.date}:</b> ${x.message}</p>`).join("\n");
+            </script>
+
+            			 	
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+    </footer>
+    <script>
+        document.querySelector("footer").innerHTML = footer_content;
+    </script>
+
+	<div class="copyrights">
+	</div><!-- end copyrights -->
+	<script>
+		document.querySelector(".copyrights").innerHTML = copyrights_content;
+	</script>
+
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
