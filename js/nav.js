@@ -66,10 +66,11 @@ var footer_content = `<div class="container">
 </div><!-- end row -->
 </div><!-- end container -->`;
 
-var copyrights_content = `<div class="container">
+var copyrights_content = `<div class="container" style="position:fixed; bottom:0px; left:0px; width:100%; max-width:100vw; background-color:lightgray; opacity:0.8;">
 <div class="footer-distributed">
     <div class="footer-center">
-        <p class="footer-company-name">All Rights Reserved. &copy; 2021 LogicUS
+        <p class="footer-company-name"> 
+<strong> Authored by research group TIC-137 in colaboration with department of Computer Science and AI of University of Seville. Grant PID2019-109152GB-I00/AEI/10.13039/501100011033 funded by: </strong> <img class="micinaei" src="micin-aei.png" alt="" />
         </p>
     </div>
 </div>
