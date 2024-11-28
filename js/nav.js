@@ -70,7 +70,7 @@ var copyrights_content = `<div class="container" style="position:fixed; bottom:0
 <div class="footer-distributed">
     <div class="footer-center">
         <p class="footer-company-name"> 
-<strong> Authored by research group TIC-137 in colaboration with department of Computer Science and AI of University of Seville. Grant PID2019-109152GB-I00/AEI/10.13039/501100011033 funded by: </strong> <img class="micinaei" src="micin-aei.png" alt="" />
+<strong> Authored by research group TIC-137 in colaboration with department of Computer Science and AI of University of Seville. Grant PID2019-109152GB-I00/AEI/10.13039/501100011033 funded by: </strong> <img class="micinaei" src="micin-aei.png" style="height:80px;" alt="" />
         </p>
     </div>
 </div>
