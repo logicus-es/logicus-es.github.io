@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>LogicUS</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/logicusLogo.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/logicusLogo.ico">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<!--Fontawesome CSS-->
+<link rel="stylesheet" href="fontawesomeIcons/css/all.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Start header -->
+    <header class="top-navbar">
+
+    </header>
+    <script src="js/nav.js"></script>
+    <script>
+        document.querySelector("header").innerHTML = nav_element;
+    </script>
+    <!-- End header -->
+
+    <div class="all-title-box">
+        <div class="container text-center">
+            <h1>LogicUS<span class="m_1">A multi-environment framework for Logic</span></h1>
+        </div>
+    </div>
+
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>The LogcicUS System</h3>
+                    <img src="images/LogicUSSystem.png" alt="LogicUS System Architecture" style="width: 100%;">
+                </div>
+            </div><!-- end title -->
+            <div class="col-md-8 offset-md-2">
+                    <div class="message-box">
+                        
+
+                        <p> LogicUS system consists of three main tools providing different levels of abstraction: <i>LogicUS-LIB</i> (functional engine; functional libraries programmed in Elm), <i>LogicUS-NB</i> (an integration with <i>litvis</i> to generate executable documents) and <i>LogicUS-GUI</i> (an interface GUI oriented to web and executable flows for visualization and integration). These three components are designed according to efficiency and usability standards as driving forces. Thus, the tool provides a particularly useful system in both fields, research (through a relatively fast, simple, and highly adaptable way for logic-based prototyping), and education (through a framework that makes low-level execution of algorithms while preserving the conceptual structures and procedural methodologies underlying the logical foundations).</p>
+
+                        <h4>LogicUS-LIB: The functional Core</h4>
+
+                        <p> This is the computing engine of the system. It contains several packages: (i) the implementation (in Elm, a pure functional web-oriented language) of all the necessary types for the different logical elements (formulas, clauses, interpretations, substitutions, etc.), (ii) the functions required for their treatment, and (iii) decision algorithms that allow working with both PL (LogicUS.PL) and FOL (LogicUS.FOL). To facilitate interoperability with rendering interfaces, it also includes some representation mechanisms (to LaTeX, GraphViz/DOT and CNF-DIMACS notation, for example). To prevent users rebuild well-known procedures, they can exploit structures and functions already provided (they can be publicly shared).  </p>
+
+
+                        <h4>LogicUS-GUI: A flow-design and web-based GUI</h4>
+
+                        <p>LogicUS can be used directly from the REPL console provided by Elm (by importing the LogicUS-LIB libraries) and may be an interesting use for some users. However, this approach is far from the visual, convenient, and reusable methods usually required by researchers for their proofs; and even more so from the objectives of standard Logic courses. For this reason, LogicUS-GUI provides a complete front-end guided by the principles of accessibility and usability. This tool integrates Elm with web technologies (including HTML, CSS, JavaScript, and LiteGraph as main contributors), providing a high abstraction layer. </p>
+
+                        <p>The design of Elm as a Web-oriented language and its ability to compile to JavaScript allows (i) the construction of a pure Web interface, which is executable on any machine with a browser regardless of the OS; (ii) the integration of other Web technologies such as Litegraph (as an essential method of user interaction with the system) or D3.js (for the proper visualization of the graphs); (iii) the connection with robust solving systems.  </p>
+
+                        <p>An interesting feature is the use of Litegraph.js as underlying technology for system-user interaction. This belongs to the visual programming paradigm by creating execution graphs, an ideal way to reflect the problem-solving methodology and the possibility of observing the partial-step results, a point of study in every system. The graphs may include nodes of different types (providing different functionalities), selectable from a menu of available nodes, and connectable to each other, fully interactive with the mouse. Moreover, Litegraph within JS and Elm give us other characteristics including node options, model saving/loading, third-party connection (web by HTTP Requests or local by Node.js -on development-). That creates an nice environment for research prototyping but also, for educational purposes.</p>
+
+
+                        <h4>LogicUS-NB: Executable documents for Logic </h4>
+
+                        <p>Lastly, to relieve some limitations of GUI (e.g. $L$-structures in $FOL$), an intermediate environment, LogicUS-NB, is provided. It is notebook-like system powered by litvis. This way, a module to connect Markdown (enhanced with LaTeX and other visualization engines as Tikz or GraphViz) with the Elm run engine is provided. This allows the embedding of <i>Elm chunks</i> containing executable Elm code, that is executed and properly rendered in the document.</p>
+
+                        <p>The tool, within the representation method provided in LogicUS-LIB, allows the user to model a complete problem by using logical formulas and then solve it by applying algorithms implemented in LogicUS-LIB (or even using the document itself for coding there the algorithm). All this through a markdown file that supports several options for visualization and different outcome formats (HTML or PDF, among others) by using standard editors (Atom or VSCode). </p>
+
+                        <p>That provides an ideal environment for developing, simultaneously, the code of the model and the documentation, which is directly useful for researchers (who can, easily, share these documents with all the material embedded) and teachers (who can integrate the theoretical concepts with the practical demonstrations).</p>
+
+
+                        <p>With this three components, the tool provides a sound framework for two activity fields. On the one hand, in the topic of logic-based systems research, prototyping is facilitated in a relatively fast, simple, and highly adaptable way. On the other hand, in Education, by allowing the student abstract from low-level execution of algorithms whilst preserving the conceptual structures and procedural methodologies underlying the logical foundations.</p>
+
+                    </div><!-- end messagebox -->
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+    </footer>
+    <script>
+        document.querySelector("footer").innerHTML = footer_content;
+    </script>
+    ><!-- end footer -->
+
+    <div class="copyrights">
+    </div><!-- end copyrights -->
+    <script>
+        document.querySelector(".copyrights").innerHTML = copyrights_content;
+    </script>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
